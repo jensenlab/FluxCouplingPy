@@ -194,9 +194,3 @@ def sets_from_coupling_mtx(mtx):
         active[coupled_idxs] = False
     return(sets)
 
-fname = "/home/dikshant/GitHub/PathwayMining/ecoli.lp"
-model = read(fname)
-mtx = cachedFCF(model)
-sets = sets_from_coupling_mtx(mtx)
-print(len(sets))
-print(sets)
